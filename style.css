@@ -1,0 +1,137 @@
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #000000;
+
+    --fonte-principal: "Inter", sans-serif;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.principal{
+    background-image: url(./images/Background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+.principal__conteudo{
+    margin: 0 6em;
+}
+.principal__conteudo__titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.principal__conteudo_img{
+    margin: 1em 0 1em 0;
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+}
+.principal__conteudo__botao{
+    color: var(--branco-principal);
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    display: block;
+    margin-bottom: 1px ;
+}
+.botao_secundario{
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--branco-principal);
+    border: var(--branco-principal) 2px solid;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+.principal__conteudo__aviso{
+    font-size: 0.75rem ;
+    color: var(--cinza-secundario);
+
+}
+
+.secundario{
+    align-items: center;
+    background-image: none;
+    margin: 0 10em;
+}
+.secundario__imagem{
+    width: 80%;
+   
+}
+.descricao_titulo{
+    font-weight: 700;
+    font-size: 3rem; 
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao_paragrafo{
+    color: var(--cinza-secundario);
+}
+.descricao_texto{
+    padding: 2em;
+}
+.principal__conteudo__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos{
+   text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 3rem;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+    
+}
+.lista__item{
+    font-size: 2rem;   
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape__lista{
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+} 
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+  
+}
+.lista__link a:hover{
+    color: var(--cinza-secundario);
+}
+.rodape__texto{
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+    font-size: 14px;
+}
